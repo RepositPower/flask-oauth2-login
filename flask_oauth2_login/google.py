@@ -8,6 +8,7 @@ class GoogleLogin(OAuth2Login):
   state_session_key = "_google_login_state"
 
   default_scope = (
+    "openid,"
     "https://www.googleapis.com/auth/userinfo.email,"
     "https://www.googleapis.com/auth/userinfo.profile"
   )
